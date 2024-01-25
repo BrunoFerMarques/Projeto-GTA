@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+.header{
+    background-color: black;
+    display: flex;
+    border-color: white;
+}
+.logo{
+    display: flex; 
+    padding-top:15px;
+    margin-bottom: 15px;
+}
+#logo-rockstar{
+    padding-left: 50px;
+    padding-right: 25px;
+}
+#logo-GTA5{
+    padding-left: 25px;
+}
+
+.menu{
+    padding-left: 700px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+}
+
+
+nav li {
+    display: inline-flex;
+    margin-left:80px;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    height: 100%; 
+}
+
+.img-background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.info{
+    width: 40%;
+    height: 200px;
+    display: block;
+    color: white;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 700px;
+    bottom: 0;
+    margin: auto;
+}
+.listofgames{
+    width: 40%;
+    height: 200px;
+    display: flex;
+    color: black;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 700px;
+    bottom: 0;
+    margin: auto
+    
+}
