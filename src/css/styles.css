@@ -1,81 +1,230 @@
-*{
-    margin: 0;
-}
-.header{
-    background-color: black;
-    display: flex;
-    border-color: white;
-}
-.logo{
-    display: flex; 
-    padding-top:15px;
-    margin-bottom: 15px;
-}
-#logo-rockstar{
-    padding-left: 50px;
-    padding-right: 25px;
-}
-#logo-GTA5{
-    padding-left: 25px;
-}
 
-.menu{
-    padding-left: 700px;
-}
-nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    position: absolute;
-    top: 0px;
-    right: 50px;
-}
-
-
-nav li {
-    display: inline-flex;
-    margin-left:80px;
-    width: 100%;
-}
-nav a {
-    text-decoration: none;
+body{
+    background-color: #282828;
     color: #fff;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    text-align: center;
-    height: 100%; 
 }
 
-.img-background{
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
+.header{
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
 }
 
-.info{
-    width: 40%;
-    height: 200px;
-    display: block;
-    color: white;
-    position: absolute;
-    top: 600px;
-    left: 0;
-    right: 700px;
-    bottom: 0;
-    margin: auto;
-}
-.listofgames{
-    width: 40%;
-    height: 200px;
+.header .logo-container{
     display: flex;
-    color: black;
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 700px;
-    bottom: 0;
-    margin: auto
+    gap: 15px;
+}
+
+.header .menu{
+    display: inline-flex;
+    gap: 30px;
+
+}
+.header .menu li a{
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: "Chalet";    
+}
+
+
+.menu li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.home{
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
     
 }
+
+.home::after{
+    background-color: blue;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7)35%, transparent 65%);
+}
+
+.home .img-background{
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .info{
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .info img{
+    max-width: 150px;
+}
+
+.home .info .listofgames{
+    display: flex;
+    gap: 32px;
+}
+
+.home .info .title{
+    font-family: "ChaletComprime";
+    font-size: 55px;
+}
+
+.home .info .text{
+    font-family: "Chalet";
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-buy, .btn-platform{
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: "ChaletComprime";
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.btn-platform{
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.buy .game-cover{
+    width: 270px;
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.buy .title-buynow{
+    font-family: 'ChaletComprime';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.buy .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.buy .information{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buy .information h3{
+    font-family: 'ChaletComprime';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.buy .information p{
+    color: #e8e8e8;
+    font-family: "Chalet";
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.buy .information .platforms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.buy .btn-platform .platformsinButton{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    
+}
+
+.buy .btn-platform .platformsinButton.active{
+    display: flex;
+    opacity: 1;
+}
+    
+
+
+
+.buy .btn-platform .platformsinButton li{
+    padding: 20px;
+}
+
+.buy .btn-platform .platformsinButton li:nth-child(1){
+    border: 1px solid #00439c;
+}
+
+.buy .btn-platform .platformsinButton li:nth-child(1):hover{
+   background-color: #00439c;
+}
+
+.buy .btn-platform .platformsinButton li:nth-child(2){
+    border: 1px solid #387a26;
+}
+
+.buy .btn-platform .platformsinButton li:nth-child(2):hover{
+    background-color: #387a26;
+}
+
+.buy .btn-platform .platformsinButton li:nth-child(3){
+    border: 1px solid #00439c;
+}
+
+.buy .btn-platform .platformsinButton li:nth-child(3):hover{
+    background-color: #00439c;
+}
+
+.buy .btn-platform .platformsinButton li:nth-child(4){
+    border: 1px solid #387a26;
+}
+.buy .btn-platform .platformsinButton li:nth-child(4):hover{
+    background-color: #387a26;
+}
+
+.buy .btn-platform .platformsinButton li:nth-child(5){
+    border: 1px solid #fcaf17;
+}
+.buy .btn-platform .platformsinButton li:nth-child(5):hover{
+    background-color: #fcaf17;
+}
+

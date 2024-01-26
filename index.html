@@ -5,15 +5,16 @@
         <meta name= "viewport" content="width=device-width, initial-scale=1.0">
         <title>GTA 5</title>
         <link rel="stylesheet" href="./src/css/styles.css">
+        <link rel="stylesheet" href="./src/css/reset.css">
         <link rel="shortcut icon" href = "src/img/favicon.png" type = "image/x-icon">
         <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet" />
     </head>
     
     <body>
         <header class="header">
-            <div class = "logo">
+            <div class = "logo-container">
                 <img src="./src/img/logo-rockstar.svg" alt="Logo Rockstar Games"id ="logo-rockstar">
-                <hr id="bar">
+                <hr>
                 <img src="./src/img/logo-gta.svg" alt = "logo gta 5" id="logo-GTA5">
             </div>
             <nav>
@@ -22,35 +23,36 @@
                         <a href="#home" id="btn-home">Home</a>
                     </li>            
                     <li>
-                        <a href="#buy" id="btn-buy">Comprar</a>
+                        <a href="#buy" id="btn-buy-header">Comprar</a>
                     </li>
-                    <li>
+                    <li> 
                         <a href="https://support.rockstargames.com/categories/200013306" target="_blank" id="btn-support">Suporte</a>
+                        <img src="./src/img/icone-link.svg" alt="icon link of suporrt">
                     </li>
                 </ul>
             </nav>
         </header>
         
-        <main class="home" id="home">
+        <main class="home" >
             <img class="img-background" src="./src/img/bg-main.png" alt="img"> 
-            <div class="listofgames"> 
-                <img class="gta5-logo" src="./src/img/logo-gta-v.svg" alt="logo gta 5">
-                <img class="gtaonline-logo" src="./src/img/logo-gta-online.svg" alt="logo gta Online">
-            </div>
-            <div class="info">
-                <h1 class="title"> Já disponíveis para Playstation 5 e Xbox Series S|X</h1>
-                <p class="text"> Experimente os fênomenos do entretenimento Grand Theft Auto 5 e GTA Online</p>
-                <a class = "btn-but"href = "#buy">Compre já</a>
-            </div>
+                <div class="info" >
+                    <div class="listofgames"> 
+                        <img class="gta5-logo" src="./src/img/logo-gta-v.svg" alt="logo gta 5">
+                        <img class="gtaonline-logo" src="./src/img/logo-gta-online.svg" alt="logo gta Online">
+                    </div>
+                    <h1 class="title"> Já disponíveis para Playstation 5 e Xbox Series S|X</h1>
+                    <p class="text"> Experimente os fênomenos do entretenimento Grand Theft Auto 5 e GTA Online</p>
+                    <a class = "btn-buy"href = "#buy">Compre já</a>
+                </div>
         </main>
         
-        <section class="buy" id="buy">
+        <section class="buy">
             <h2 class="title-buynow">
             Compre já
             </h2>
-            <div class="cartao">
-                <img class ="capa-do-jogo"src="./src/img/gta5.jpg" alt="Capa do jogo">
-                <div class="informacoes">
+            <div class="card">
+                <img class ="game-cover"src="./src/img/gta5.jpg" alt="Capa do jogo">
+                <div class="information">
                     <h3>Grand Theft Auto 5</h3>
                     <p>Inclui <strong>modo história</strong> e <strong>GTA Online</strong></p>
                     <ul class="platforms">
@@ -62,7 +64,7 @@
                     </ul>
                 </div>
                 <button class = "btn-platform">Selecione a plataforma
-                    <ul class="platforms">
+                    <ul class="platformsinButton">
                         <li><img src="./src/img/logo-ps5.svg" alt="Logo PS5"></li>
                         <li><img src="./src/img/logo-xbox-series-s.svg" alt ="Logo Xbox Series"></li>
                         <li><img src="./src/img/logo-ps4.svg" alt= "logo PS4"></li>
