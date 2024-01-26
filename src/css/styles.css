@@ -175,16 +175,14 @@ body{
     flex-direction: column;
     gap: 20px;
     transition: all .3s ease-in;
-    
+    display: none;
+    opacity: 0;
 }
 
 .buy .btn-platform .platformsinButton.active{
     display: flex;
     opacity: 1;
 }
-    
-
-
 
 .buy .btn-platform .platformsinButton li{
     padding: 20px;
