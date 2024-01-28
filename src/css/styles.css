@@ -33,15 +33,14 @@ body{
 }
 
 
-.menu li a:hover{
+.header .menu li a:hover{
     border-bottom: 2px solid #fff;
 }
 
 .home{
     display: flex;
     position: relative;
-    min-height: calc(100vh - 80px);
-    
+    min-height: (calc00vh - 80px);   
 }
 
 .home::after{
@@ -56,6 +55,7 @@ body{
 .home .img-background{
     width: 100%;
     object-fit: cover;
+    min-height: calc(100vh - 80px);
 }
 
 .home .info{
@@ -65,7 +65,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    gap: 30px;
     padding: 80px 80px 170px;
     max-width: 780px;
 }
@@ -178,6 +178,12 @@ body{
     display: none;
     opacity: 0;
 }
+
+.buy .btn-platform .platformsinButton .active{
+    display: flex;
+    opacity: 1;
+}
+
 
 .buy .btn-platform .platformsinButton.active{
     display: flex;

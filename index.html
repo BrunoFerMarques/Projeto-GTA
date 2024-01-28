@@ -6,9 +6,10 @@
         <title>GTA 5</title>
         <link rel="stylesheet" href="./src/css/styles.css">
         <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/responsive.css">
         <link rel="shortcut icon" href = "src/img/favicon.png" type = "image/x-icon">
         <link href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet" />
-    </head>
+       
     
     <body>
         <header class="header">
@@ -20,10 +21,10 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a href="#home" id="btn-home">Home</a>
+                        <a href="#home">Home</a>
                     </li>            
                     <li>
-                        <a href="#buy" id="btn-buy-header">Comprar</a>
+                        <a href="#buy">Comprar</a>
                     </li>
                     <li> 
                         <a href="https://support.rockstargames.com/categories/200013306" target="_blank" id="btn-support">Suporte</a>
@@ -33,7 +34,7 @@
             </nav>
         </header>
         
-        <main class="home" >
+        <main class="home" id="home">
             <img class="img-background" src="./src/img/bg-main.png" alt="img"> 
                 <div class="info" >
                     <div class="listofgames"> 
@@ -46,7 +47,7 @@
                 </div>
         </main>
         
-        <section class="buy">
+        <section class="buy" id="buy">
             <h2 class="title-buynow">
             Compre já
             </h2>
@@ -63,7 +64,7 @@
                         <li><img src="src/img/logo-pc.svg"></li>
                     </ul>
                 </div>
-                <button class = "btn-platform">Selecione a plataforma
+                <button class = "btn-platform" name="buy">Selecione a plataforma
                     <ul class="platformsinButton">
                         <li><img src="./src/img/logo-ps5.svg" alt="Logo PS5"></li>
                         <li><img src="./src/img/logo-xbox-series-s.svg" alt ="Logo Xbox Series"></li>
@@ -74,5 +75,6 @@
                 </button>
             </div>
         </section>
+        <script src="./src/js/index.js"></script>
     </body>
 </html>
